@@ -1,0 +1,55 @@
+:host {
+  background-color: #2f3136;
+  height: 100%;
+  width: 30rem;
+  overflow-x: auto;
+  max-width: 30rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  .main-content {
+    padding: 1rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit: cover;
+      width: 12rem;
+      height: 12rem;
+      min-height: 12rem;
+      border-radius: 100%;
+      margin-bottom: 4rem;
+    }
+    h1 {
+      display: block;
+      color: white;
+      font-size: 80px;
+    }
+  }
+
+  .options {
+    margin-top: 4rem;
+    display: flex;
+    padding-left: 2rem;
+    flex-direction: column;
+    .contacts {
+      height: 6rem;
+      &.deudores {
+        h2 {
+          color: green;
+        }
+      }
+      &.acredores {
+        h2 {
+          color: red;
+        }
+      }
+      h2 {
+        color: white;
+        font-size: 16px;
+        font-weight: 100;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
